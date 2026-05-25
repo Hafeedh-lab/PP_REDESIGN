@@ -26,8 +26,8 @@ const tiles = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[80vh] md:min-h-[90vh] flex items-center text-white overflow-hidden">
-      <picture className="absolute inset-0 -z-10">
+    <section className="relative min-h-[80vh] md:min-h-[90vh] flex items-center text-white overflow-hidden bg-navy">
+      <picture className="absolute inset-0">
         <source srcSet="/images/hero-market.webp" type="image/webp" />
         <img
           src="/images/hero-market.jpg"
@@ -36,9 +36,9 @@ export default function Hero() {
           fetchPriority="high"
         />
       </picture>
-      <div className="absolute inset-0 bg-gradient-to-b from-navy/40 via-navy/60 to-navy/80 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/75 to-navy/90" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-24 md:py-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-24 md:py-32">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl text-white leading-tight">
             <span className="font-normal block">Africa's market economy runs on hard work.</span>
