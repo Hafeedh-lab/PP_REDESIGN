@@ -22,7 +22,6 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({
   const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
   
   // On mobile, always show content immediately
-  const shouldAnimate = !isMobile && isVisible;
   const finalIsVisible = isMobile ? true : isVisible;
 
   const getAnimationClasses = () => {
