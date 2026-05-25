@@ -154,12 +154,12 @@ const BlogCMS: React.FC<BlogCMSProps> = ({ onPostsChange }) => {
         <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
           <div className="flex justify-between items-center">
             <div>
-              <h1 className="text-3xl font-bold text-gray-900 font-primary">Blog CMS</h1>
-              <p className="text-gray-600 mt-2 font-primary">Manage your blog posts and content</p>
+              <h1 className="text-3xl font-bold text-gray-900">Blog CMS</h1>
+              <p className="text-gray-600 mt-2">Manage your blog posts and content</p>
             </div>
             <button
               onClick={() => setIsEditing(true)}
-              className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 flex items-center space-x-2 font-primary"
+              className="bg-teal text-white px-4 py-2 rounded-lg font-semibold hover:bg-teal-dark transition-colors duration-200 flex items-center space-x-2"
             >
               <Plus className="w-5 h-5" />
               <span>New Post</span>
@@ -173,7 +173,7 @@ const BlogCMS: React.FC<BlogCMSProps> = ({ onPostsChange }) => {
             <div className="bg-white rounded-lg shadow-xl w-full max-w-4xl max-h-[90vh] overflow-y-auto">
               <div className="p-6">
                 <div className="flex justify-between items-center mb-6">
-                  <h2 className="text-2xl font-bold text-gray-900 font-primary">
+                  <h2 className="text-2xl font-bold text-gray-900">
                     {editingPost ? 'Edit Post' : 'Create New Post'}
                   </h2>
                   <button
@@ -187,7 +187,7 @@ const BlogCMS: React.FC<BlogCMSProps> = ({ onPostsChange }) => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   {/* Title */}
                   <div>
-                    <label htmlFor="title" className="block text-sm font-medium text-gray-700 mb-2 font-primary">
+                    <label htmlFor="title" className="block text-sm font-medium text-gray-700 mb-2">
                       Title *
                     </label>
                     <input
@@ -195,7 +195,7 @@ const BlogCMS: React.FC<BlogCMSProps> = ({ onPostsChange }) => {
                       id="title"
                       value={formData.title}
                       onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent font-primary"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal focus:border-transparent"
                       placeholder="Enter post title"
                       required
                     />
@@ -203,7 +203,7 @@ const BlogCMS: React.FC<BlogCMSProps> = ({ onPostsChange }) => {
 
                   {/* Author */}
                   <div>
-                    <label htmlFor="author" className="block text-sm font-medium text-gray-700 mb-2 font-primary">
+                    <label htmlFor="author" className="block text-sm font-medium text-gray-700 mb-2">
                       Author
                     </label>
                     <input
@@ -211,14 +211,14 @@ const BlogCMS: React.FC<BlogCMSProps> = ({ onPostsChange }) => {
                       id="author"
                       value={formData.author}
                       onChange={(e) => setFormData({ ...formData, author: e.target.value })}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent font-primary"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal focus:border-transparent"
                       placeholder="Author name"
                     />
                   </div>
 
                   {/* Excerpt */}
                   <div>
-                    <label htmlFor="excerpt" className="block text-sm font-medium text-gray-700 mb-2 font-primary">
+                    <label htmlFor="excerpt" className="block text-sm font-medium text-gray-700 mb-2">
                       Excerpt
                     </label>
                     <textarea
@@ -226,14 +226,14 @@ const BlogCMS: React.FC<BlogCMSProps> = ({ onPostsChange }) => {
                       value={formData.excerpt}
                       onChange={(e) => setFormData({ ...formData, excerpt: e.target.value })}
                       rows={3}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent font-primary"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal focus:border-transparent"
                       placeholder="Brief description of the post"
                     />
                   </div>
 
                   {/* Content */}
                   <div>
-                    <label htmlFor="content" className="block text-sm font-medium text-gray-700 mb-2 font-primary">
+                    <label htmlFor="content" className="block text-sm font-medium text-gray-700 mb-2">
                       Content *
                     </label>
                     <textarea
@@ -241,7 +241,7 @@ const BlogCMS: React.FC<BlogCMSProps> = ({ onPostsChange }) => {
                       value={formData.content}
                       onChange={(e) => setFormData({ ...formData, content: e.target.value })}
                       rows={12}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent font-primary"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal focus:border-transparent"
                       placeholder="Write your blog post content here..."
                       required
                     />
@@ -249,14 +249,14 @@ const BlogCMS: React.FC<BlogCMSProps> = ({ onPostsChange }) => {
 
                   {/* Status */}
                   <div>
-                    <label htmlFor="status" className="block text-sm font-medium text-gray-700 mb-2 font-primary">
+                    <label htmlFor="status" className="block text-sm font-medium text-gray-700 mb-2">
                       Status
                     </label>
                     <select
                       id="status"
                       value={formData.status}
                       onChange={(e) => setFormData({ ...formData, status: e.target.value as 'draft' | 'published' })}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent font-primary"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal focus:border-transparent"
                     >
                       <option value="draft">Draft</option>
                       <option value="published">Published</option>
@@ -268,13 +268,13 @@ const BlogCMS: React.FC<BlogCMSProps> = ({ onPostsChange }) => {
                     <button
                       type="button"
                       onClick={handleCancel}
-                      className="px-6 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors duration-200 font-primary"
+                      className="px-6 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors duration-200"
                     >
                       Cancel
                     </button>
                     <button
                       type="submit"
-                      className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 flex items-center space-x-2 font-primary"
+                      className="bg-teal text-white px-6 py-2 rounded-lg font-semibold hover:bg-teal-dark transition-colors duration-200 flex items-center space-x-2"
                     >
                       <Save className="w-5 h-5" />
                       <span>{editingPost ? 'Update Post' : 'Create Post'}</span>
@@ -293,11 +293,11 @@ const BlogCMS: React.FC<BlogCMSProps> = ({ onPostsChange }) => {
               <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Edit2 className="w-8 h-8 text-gray-400" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2 font-primary">No blog posts yet</h3>
-              <p className="text-gray-600 mb-6 font-primary">Create your first blog post to get started.</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">No blog posts yet</h3>
+              <p className="text-gray-600 mb-6">Create your first blog post to get started.</p>
               <button
                 onClick={() => setIsEditing(true)}
-                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 font-primary"
+                className="bg-teal text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-dark transition-colors duration-200"
               >
                 Create First Post
               </button>
@@ -309,8 +309,8 @@ const BlogCMS: React.FC<BlogCMSProps> = ({ onPostsChange }) => {
                   <div className="flex justify-between items-start">
                     <div className="flex-1">
                       <div className="flex items-center space-x-3 mb-2">
-                        <h3 className="text-lg font-semibold text-gray-900 font-primary">{post.title}</h3>
-                        <span className={`px-2 py-1 text-xs font-medium rounded-full font-primary ${
+                        <h3 className="text-lg font-semibold text-gray-900">{post.title}</h3>
+                        <span className={`px-2 py-1 text-xs font-medium rounded-full ${
                           post.status === 'published' 
                             ? 'bg-green-100 text-green-800' 
                             : 'bg-yellow-100 text-yellow-800'
@@ -320,10 +320,10 @@ const BlogCMS: React.FC<BlogCMSProps> = ({ onPostsChange }) => {
                       </div>
                       
                       {post.excerpt && (
-                        <p className="text-gray-600 mb-3 font-primary">{post.excerpt}</p>
+                        <p className="text-gray-600 mb-3">{post.excerpt}</p>
                       )}
                       
-                      <div className="flex items-center space-x-4 text-sm text-gray-500 font-primary">
+                      <div className="flex items-center space-x-4 text-sm text-gray-500">
                         {post.author && (
                           <span className="flex items-center">
                             <User className="w-4 h-4 mr-1" />
@@ -344,7 +344,7 @@ const BlogCMS: React.FC<BlogCMSProps> = ({ onPostsChange }) => {
                     <div className="flex items-center space-x-2 ml-4">
                       <button
                         onClick={() => handleEdit(post)}
-                        className="p-2 text-gray-400 hover:text-blue-600 transition-colors duration-200"
+                        className="p-2 text-gray-400 hover:text-teal transition-colors duration-200"
                         title="Edit post"
                       >
                         <Edit2 className="w-5 h-5" />
