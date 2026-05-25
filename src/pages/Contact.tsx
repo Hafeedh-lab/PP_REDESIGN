@@ -45,13 +45,12 @@ export default function Contact() {
                 2. Replace the WEB3FORMS_ACCESS_KEY_HERE placeholder below with the real key.
                 3. Update the redirect URL when the production domain is confirmed.
               */}
-              {/* TODO: Replace WEB3FORMS_ACCESS_KEY_HERE with the real key from https://web3forms.com */}
               <form
                 action="https://api.web3forms.com/submit"
                 method="POST"
                 className="bg-white rounded-2xl shadow-md p-6 md:p-8 space-y-5"
               >
-                <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY_HERE" />
+                <input type="hidden" name="access_key" value="90d5b3e1-7b0c-4442-8a69-dffb4f580825" />
                 <input type="hidden" name="subject" value="New Ploutos Page Contact Form Submission" />
                 <input
                   type="hidden"
