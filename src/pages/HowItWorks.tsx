@@ -67,24 +67,60 @@ export default function HowItWorks() {
 
       {/* Path 1 */}
       <section className="bg-white py-20 md:py-28">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl md:text-5xl text-ink mb-12">
-            You sell in a market. Your financial journey starts with an OWA agent.
-          </h2>
-          <div className="space-y-10 md:space-y-12">
-            {path1.map((s) => (
-              <PathStep key={s.n} number={s.n} heading={s.heading} body={s.body} color="teal" />
-            ))}
-          </div>
-          <div className="mt-12">
-            <a
-              href="https://owabypepcode.com.ng"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center bg-teal hover:bg-teal-dark text-white rounded-full px-6 py-3 font-semibold transition"
-            >
-              Start with OWA by Pepcode →
-            </a>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-12">
+            {/* Mobile image (above copy) */}
+            <div className="md:hidden">
+              <picture>
+                <source srcSet="/images/path-1-naira-ledger.webp" type="image/webp" />
+                <img
+                  src="/images/path-1-naira-ledger.jpg"
+                  alt="Hand-written naira ledger from a market trader"
+                  loading="lazy"
+                  className="w-full max-h-96 object-cover rounded-2xl"
+                />
+              </picture>
+            </div>
+
+            {/* Left: copy + steps + CTA (60%) */}
+            <div className="md:col-span-3">
+              <h2 className="font-display text-3xl md:text-5xl text-ink mb-12">
+                You sell in a market. Your financial journey starts with an OWA agent.
+              </h2>
+              <div className="space-y-10 md:space-y-12">
+                {path1.map((s) => (
+                  <PathStep key={s.n} number={s.n} heading={s.heading} body={s.body} color="teal" />
+                ))}
+              </div>
+              <div className="mt-12">
+                <a
+                  href="https://owabypepcode.com.ng"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-teal hover:bg-teal-dark text-white rounded-full px-6 py-3 font-semibold transition"
+                >
+                  Start with OWA by Pepcode →
+                </a>
+              </div>
+            </div>
+
+            {/* Right: sticky illustrative image (40%, desktop only) */}
+            <div className="hidden md:block md:col-span-2">
+              <div className="sticky top-24">
+                <div className="relative rounded-2xl overflow-hidden">
+                  <picture>
+                    <source srcSet="/images/path-1-naira-ledger.webp" type="image/webp" />
+                    <img
+                      src="/images/path-1-naira-ledger.jpg"
+                      alt="Hand-written naira ledger from a market trader"
+                      loading="lazy"
+                      className="w-full h-full object-cover rounded-2xl"
+                    />
+                  </picture>
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent to-cream/20 rounded-2xl" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
