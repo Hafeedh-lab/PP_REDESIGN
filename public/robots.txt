@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /blog
+Sitemap: https://ploutospage.com/sitemap.xml
