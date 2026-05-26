@@ -1,8 +1,0 @@
-node_modules
-dist
-.git
-.bolt
-*.log
-.DS_Store
-BUILD_REPORT.md
-PLOUTOS_REDESIGN_PRD.md
