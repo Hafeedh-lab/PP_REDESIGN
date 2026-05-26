@@ -134,7 +134,10 @@ export default function Contact() {
                   <MapPin className="w-6 h-6 text-teal flex-shrink-0 mt-1" />
                   <div>
                     <div className="text-sm uppercase tracking-wider text-ink-muted font-semibold">Address</div>
-                    <div className="text-ink mt-1">8 Rock Drive, Lekki Phase One, Lagos, Nigeria</div>
+                    <div className="text-ink mt-1 space-y-2">
+                      <div>Suite 5, Mojisola Mall, Beach Road, Ibeshe, Ikorodu, Lagos</div>
+                      <div>15 Manhattan Mall, 4th Avenue, Gwarinpa, Abuja</div>
+                    </div>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start">
