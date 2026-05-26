@@ -8,7 +8,7 @@ export default function FounderStoryTeaser() {
           This started with a market woman who had no records.
         </h2>
         <p className="mt-6 text-ink-muted text-base md:text-lg">
-          Fifteen years ago, the founder's mother ran a business in the open market. She worked hard. She had loyal
+          Fifteen years ago, our founder's mother ran a business in the open market. She worked hard. She had loyal
           customers. But she kept no financial records. When the business declined, there was nothing to show what went
           wrong — and nothing to pass on.
         </p>

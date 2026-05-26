@@ -16,8 +16,6 @@ const companyLinks = [
 const connectLinks = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/company/ploutos-page-limited/' },
   { label: 'Instagram', href: 'https://www.instagram.com/ploutospage/' },
-  // TODO: remove or update Twitter/X link if no real account exists
-  { label: 'Twitter/X', href: 'https://twitter.com/ploutospage' },
   { label: 'WhatsApp', href: 'https://wa.me/2348024247865' },
 ];
 
@@ -87,14 +85,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-teal/30 pt-6 mt-12 flex flex-col md:flex-row md:justify-between gap-3 text-sm text-white/60">
-          <div>© 2026 Ploutos Page Limited. All rights reserved.</div>
-          <div className="flex gap-4">
-            {/* TODO: link to real pages when client provides */}
-            <Link to="/contact" className="hover:text-teal-light transition">Privacy Policy</Link>
-            {/* TODO: link to real pages when client provides */}
-            <Link to="/contact" className="hover:text-teal-light transition">Terms of Use</Link>
-          </div>
+        <div className="border-t border-teal/30 pt-6 mt-12 text-sm text-white/60 text-center">
+          © 2026 Ploutos Page Limited. All rights reserved.
         </div>
       </div>
     </footer>

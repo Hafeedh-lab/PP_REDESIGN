@@ -55,7 +55,7 @@ export default function About() {
               <img
                 src="/images/Mrs Peju.jpg"
                 alt="Olapeju A. Nwanganga, Founder & CEO of Ploutos Page"
-                className="w-full aspect-[4/5] object-cover rounded-2xl border-2 border-teal/30"
+                className="w-full max-w-md mx-auto aspect-square object-cover rounded-full border-4 border-teal/30 shadow-2xl"
                 loading="lazy"
               />
             </div>
@@ -125,20 +125,6 @@ export default function About() {
             <p className="text-teal font-medium">Founder &amp; CEO</p>
             <p className="mt-4 text-ink-muted text-base">
               ACA (ICAN), MBA — Lagos Business School, FMVA. Over a decade of cross-sector experience in fintech, healthcare, and media. Entrepreneurship trainer at FATE Foundation and Shecluded Hub.
-            </p>
-          </div>
-
-          <div className="mt-8 max-w-xl mx-auto bg-white rounded-2xl shadow-sm p-6 md:p-8 text-center">
-            <div
-              className="w-20 h-20 rounded-full bg-teal text-white font-display text-2xl font-semibold flex items-center justify-center mx-auto"
-              aria-hidden="true"
-            >
-              OA
-            </div>
-            <h3 className="mt-5 text-lg font-semibold text-ink">Oyindamola Adebowale</h3>
-            <p className="text-teal font-medium">Product Manager</p>
-            <p className="mt-3 text-ink-muted text-sm">
-              Drives product strategy, roadmap execution, and feature development across Pepcode, AuditMe, and OWA by Pepcode.
             </p>
           </div>
 
