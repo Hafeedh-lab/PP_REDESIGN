@@ -50,7 +50,7 @@ export default function Products() {
               },
               {
                 label: 'Find an OWA Agent Near You',
-                href: 'https://wa.me/2348024247865?text=Hi%2C%20I%27d%20like%20to%20find%20an%20OWA%20agent%20near%20me',
+                href: 'https://wa.me/2348163489375?text=Hi%2C%20I%27d%20like%20to%20find%20an%20OWA%20agent%20near%20me',
                 external: true,
                 variant: 'secondary',
               },
@@ -113,7 +113,8 @@ export default function Products() {
             ctas={[
               {
                 label: 'Get Audited in 7 Days →',
-                href: '/contact?subject=AuditMe',
+                href: 'https://auditme.com.ng',
+                external: true,
                 variant: 'primary',
               },
               {

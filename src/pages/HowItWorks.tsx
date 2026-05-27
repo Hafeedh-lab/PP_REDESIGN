@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import PathStep from '../components/PathStep';
 import { usePageMeta } from '../hooks/usePageMeta';
 
@@ -35,12 +34,6 @@ const path2 = [
     heading: 'Issue NRS-compliant e-invoices — automatically',
     body:
       "With Pepcode's e-invoicing integration (powered by Qucoon), every invoice you raise is automatically submitted to the Nigerian Revenue Service. Tax compliance happens in the background — without extra work from you.",
-  },
-  {
-    n: 3,
-    heading: 'When you need an audit, AuditMe is one click away',
-    body:
-      'Ready to apply for a bank loan, attract an investor, or meet a CAC filing requirement? Upload your Pepcode financial records to AuditMe and receive a fully audited, IFRS-compliant financial statement in 7 days.',
   },
 ];
 
@@ -175,12 +168,14 @@ export default function HowItWorks() {
           </div>
 
           <div className="mt-12">
-            <Link
-              to="/contact?subject=AuditMe"
+            <a
+              href="https://auditme.com.ng"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center bg-purple hover:bg-purple-dark text-white rounded-full px-6 py-3 font-semibold transition"
             >
               Get Your Audit Started →
-            </Link>
+            </a>
             <p className="mt-4 text-white/70 text-sm">
               Available to every business regardless of size or records held
             </p>

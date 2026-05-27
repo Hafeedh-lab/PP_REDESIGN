@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const productLinks = [
   { label: 'OWA by Pepcode', href: 'https://owabypepcode.com.ng', external: true },
   { label: 'Pepcode', href: 'https://pepcodeinc.com', external: true },
-  { label: 'AuditMe', href: '/how-it-works#auditme', external: false },
+  { label: 'AuditMe', href: 'https://auditme.com.ng', external: true },
 ];
 
 const companyLinks = [
@@ -16,7 +16,7 @@ const companyLinks = [
 const connectLinks = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/company/ploutos-page-limited/' },
   { label: 'Instagram', href: 'https://www.instagram.com/ploutospage/' },
-  { label: 'WhatsApp', href: 'https://wa.me/2348024247865' },
+  { label: 'WhatsApp', href: 'https://wa.me/2348163489375' },
 ];
 
 const linkBase = 'text-white/70 hover:text-teal-light transition';

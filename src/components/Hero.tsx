@@ -19,8 +19,8 @@ const tiles = [
     heading: 'AuditMe',
     sub: 'Audited statements in 7 days — any business',
     cta: 'Get Audited →',
-    href: '/how-it-works#auditme',
-    external: false,
+    href: 'https://auditme.com.ng',
+    external: true,
   },
 ] as const;
 

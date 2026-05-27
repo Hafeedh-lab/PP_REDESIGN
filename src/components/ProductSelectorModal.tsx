@@ -33,8 +33,8 @@ const options: OptionCard[] = [
     borderColor: 'border-t-purple',
     heading: 'I just need audited financials',
     sub: 'For loan, investor, or compliance',
-    action: (navigate, close) => {
-      navigate('/contact?subject=AuditMe');
+    action: (_n, close) => {
+      window.open('https://auditme.com.ng', '_blank', 'noopener,noreferrer');
       close();
     },
   },

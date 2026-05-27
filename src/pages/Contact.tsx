@@ -145,9 +145,9 @@ export default function Contact() {
                   <div>
                     <div className="text-sm uppercase tracking-wider text-ink-muted font-semibold">Phone</div>
                     <div className="text-ink mt-1 space-x-2">
-                      <a href="tel:+2348024247865" className="hover:text-teal">+234 8024247865</a>
+                      <a href="tel:+2348163489375" className="hover:text-teal">+234 816 348 9375</a>
                       <span>·</span>
-                      <a href="tel:+2347035104346" className="hover:text-teal">+234 7035104346</a>
+                      <a href="tel:+2348057946191" className="hover:text-teal">+234 805 794 6191</a>
                     </div>
                   </div>
                 </div>
@@ -156,9 +156,9 @@ export default function Contact() {
                   <div>
                     <div className="text-sm uppercase tracking-wider text-ink-muted font-semibold">Email</div>
                     <div className="text-ink mt-1 space-x-2 break-all">
-                      <a href="mailto:support@pepcode.com" className="hover:text-teal">support@pepcode.com</a>
+                      <a href="mailto:Support@ploutospage.ng" className="hover:text-teal">Support@ploutospage.ng</a>
                       <span>·</span>
-                      <a href="mailto:olapeju.n@ploutospage.com" className="hover:text-teal">olapeju.n@ploutospage.com</a>
+                      <a href="mailto:Ploutospage@gmail.com" className="hover:text-teal">Ploutospage@gmail.com</a>
                     </div>
                   </div>
                 </div>

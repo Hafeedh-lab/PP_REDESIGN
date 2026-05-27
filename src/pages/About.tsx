@@ -1,8 +1,6 @@
 import { X } from 'lucide-react';
 import { usePageMeta } from '../hooks/usePageMeta';
 
-const boardMembers = ['Precious Nwanganga', 'Kenechukwu Egbue', 'Daniel Hargley'];
-
 export default function About() {
   usePageMeta({
     title: 'About Ploutos Page — Our Mission & Story',
@@ -109,40 +107,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="bg-cream py-20 md:py-28">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display text-3xl md:text-5xl text-ink text-center">The Team</h2>
-
-          <div className="mt-12 max-w-2xl mx-auto bg-white rounded-2xl shadow-md p-8 md:p-10 text-center">
-            <img
-              src="/images/Mrs Peju.jpg"
-              alt="Olapeju A. Nwanganga"
-              className="w-32 h-32 rounded-full object-cover mx-auto"
-              loading="lazy"
-            />
-            <h3 className="mt-6 text-xl md:text-2xl font-semibold text-ink">Olapeju A. Nwanganga</h3>
-            <p className="text-teal font-medium">Founder &amp; CEO</p>
-            <p className="mt-4 text-ink-muted text-base">
-              ACA (ICAN), MBA — Lagos Business School, FMVA. Over a decade of cross-sector experience in fintech, healthcare, and media. Entrepreneurship trainer at FATE Foundation and Shecluded Hub.
-            </p>
-          </div>
-
-          <div className="mt-16">
-            <p className="text-sm uppercase tracking-widest text-ink-muted text-center mb-6">Board Members</p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {boardMembers.map((name) => (
-                <div
-                  key={name}
-                  className="bg-white rounded-xl border border-ink/10 p-5 text-center text-ink font-medium"
-                >
-                  {name}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
