@@ -8,10 +8,12 @@ export default {
         'sans': ['"Inter"', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
       },
       colors: {
+        // NOTE: "teal" token keys now hold the brand BLUE palette (cobalt + sky).
+        // Key names kept stable so existing bg-teal / text-teal classes auto-update.
         'teal': {
-          DEFAULT: '#0D9488',
-          light: '#14B8A6',
-          dark: '#0F766E',
+          DEFAULT: '#0349AA', // brand cobalt (primary)
+          light: '#39B4FA',   // brand sky (bright accent)
+          dark: '#023A87',    // darker cobalt (hover/depth)
         },
         'gold': {
           DEFAULT: '#D4A574',
@@ -22,8 +24,8 @@ export default {
           dark: '#6D28D9',
         },
         'navy': {
-          DEFAULT: '#0F2027',
-          light: '#1E3742',
+          DEFAULT: '#0F2133', // logo deepest navy
+          light: '#1C3B5C',   // logo mid-navy
         },
         'cream': '#FAFAF7',
         'ink': {

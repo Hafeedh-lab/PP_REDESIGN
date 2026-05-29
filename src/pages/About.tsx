@@ -13,7 +13,7 @@ export default function About() {
       {/* Mission */}
       <section className="bg-cream py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="font-display text-4xl md:text-6xl text-ink">
+          <h1 className="font-display text-4xl md:text-6xl text-brand-gradient">
             We exist because too many businesses die for want of a number.
           </h1>
           <div className="mt-8 space-y-6 text-ink text-base md:text-lg leading-relaxed">

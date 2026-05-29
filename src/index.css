@@ -43,6 +43,14 @@ h3, h4, h5, h6 {
   scroll-margin-top: 96px;
 }
 
+/* Brand gradient — echoes the logo wordmark (sky -> cobalt, top to bottom) */
+.text-brand-gradient {
+  background: linear-gradient(180deg, #39B4FA 0%, #0349AA 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 /* Section reveal animation */
 .reveal-on-scroll {
   opacity: 0;

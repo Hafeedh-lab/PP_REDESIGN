@@ -7,8 +7,7 @@ import { usePageMeta } from '../hooks/usePageMeta';
 
 const homeStats: StatItem[] = [
   { value: 1600, suffix: '+', label: 'Paying Users across all products' },
-  { value: 480, suffix: '+', label: 'Audits processed on AuditMe' },
-  { value: 105, prefix: '₦', suffix: 'M', label: 'Total Revenue generated to date' },
+  { value: 580, suffix: '+', label: 'Audits processed on AuditMe' },
   { value: 98, suffix: '%', label: 'Satisfaction customer rating' },
 ];
 
@@ -28,7 +27,7 @@ export default function HomePage() {
           <div className="text-center max-w-4xl mx-auto mb-12">
             <h2 className="font-display text-3xl md:text-5xl">Numbers that tell the story.</h2>
           </div>
-          <StatsGrid items={homeStats} columnsClass="md:grid-cols-4" variant="navy-light-tiles" />
+          <StatsGrid items={homeStats} columnsClass="md:grid-cols-3" variant="navy-light-tiles" />
         </div>
       </section>
       <FounderStoryTeaser />

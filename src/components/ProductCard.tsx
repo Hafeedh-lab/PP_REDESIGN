@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import type { ReactNode } from 'react';
 
 type Accent = 'teal' | 'gold' | 'purple';
@@ -107,31 +108,27 @@ export default function ProductCard({
       </div>
 
       <div className="mt-8 flex flex-col sm:flex-row gap-4">
-        {ctas.map((cta) =>
-          cta.external ? (
+        {ctas.map((cta) => {
+          const classes = `inline-flex justify-center items-center rounded-full px-6 py-3 font-semibold transition ${
+            cta.variant === 'primary' ? primaryMap[accent] : secondaryMap[accent]
+          }`;
+          const isExternal = cta.external || /^https?:\/\//i.test(cta.href);
+          return isExternal ? (
             <a
               key={cta.label}
               href={cta.href}
               target="_blank"
               rel="noopener noreferrer"
-              className={`inline-flex justify-center items-center rounded-full px-6 py-3 font-semibold transition ${
-                cta.variant === 'primary' ? primaryMap[accent] : secondaryMap[accent]
-              }`}
+              className={classes}
             >
               {cta.label}
             </a>
           ) : (
-            <a
-              key={cta.label}
-              href={cta.href}
-              className={`inline-flex justify-center items-center rounded-full px-6 py-3 font-semibold transition ${
-                cta.variant === 'primary' ? primaryMap[accent] : secondaryMap[accent]
-              }`}
-            >
+            <Link key={cta.label} to={cta.href} className={classes}>
               {cta.label}
-            </a>
-          ),
-        )}
+            </Link>
+          );
+        })}
       </div>
     </article>
   );

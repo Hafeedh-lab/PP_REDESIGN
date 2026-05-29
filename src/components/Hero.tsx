@@ -40,7 +40,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-24 md:py-32">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl text-white leading-tight">
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl text-brand-gradient leading-tight">
             <span className="font-normal block">Africa's market economy runs on hard work.</span>
             <span className="font-semibold block">We make sure the numbers run too.</span>
           </h1>

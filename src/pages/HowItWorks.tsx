@@ -49,7 +49,7 @@ export default function HowItWorks() {
       {/* Intro */}
       <section className="bg-cream py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-display text-4xl md:text-6xl text-ink">
+          <h1 className="font-display text-4xl md:text-6xl text-brand-gradient">
             Built for where businesses actually are — not where we wish they were.
           </h1>
           <p className="mt-6 text-ink-muted text-base md:text-lg">
