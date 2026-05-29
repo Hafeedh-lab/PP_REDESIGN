@@ -172,6 +172,8 @@ export default function Contact() {
                       <a href="https://pepcodeinc.com" target="_blank" rel="noopener noreferrer" className="hover:text-teal">pepcodeinc.com</a>
                       <span>·</span>
                       <a href="https://owabypepcode.com.ng" target="_blank" rel="noopener noreferrer" className="hover:text-teal">owabypepcode.com.ng</a>
+                      <span>·</span>
+                      <a href="https://auditme.com.ng" target="_blank" rel="noopener noreferrer" className="hover:text-teal">auditme.com.ng</a>
                     </div>
                   </div>
                 </div>
