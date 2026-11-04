@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import BecomeAgent from "@/components/sections/BecomeAgent";
 import EarnWithUs from "@/components/sections/EarnWithUs";
 import Hero from "@/components/sections/Hero";
 import HowItWorks from "@/components/sections/HowItWorks";
@@ -32,6 +33,7 @@ export default function Home() {
       <Technology />
       <WhoWeAre />
       <EarnWithUs />
+      <BecomeAgent />
     </>
   );
 }

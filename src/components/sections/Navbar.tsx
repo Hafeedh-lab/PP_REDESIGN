@@ -97,7 +97,7 @@ export default function Navbar() {
 
         <ul className="hidden items-center gap-12 text-base text-ink lg:flex">
           <li>
-            <Link href={links[0].href}>{links[0].label}</Link>
+            <HashLink href={links[0].href}>{links[0].label}</HashLink>
           </li>
           <li
             className="relative flex items-center gap-2"
@@ -173,7 +173,7 @@ export default function Navbar() {
           </li>
           {links.slice(1).map((link) => (
             <li key={link.href}>
-              <Link href={link.href}>{link.label}</Link>
+              <HashLink href={link.href}>{link.label}</HashLink>
             </li>
           ))}
         </ul>
@@ -348,13 +348,13 @@ function MobileLink({
   onClick: () => void;
 }) {
   return (
-    <Link
+    <HashLink
       href={href}
       onClick={onClick}
       className="flex items-center gap-[13px]"
     >
       <MenuIcon {...icon} />
       <span className="translate-y-px">{label}</span>
-    </Link>
+    </HashLink>
   );
 }

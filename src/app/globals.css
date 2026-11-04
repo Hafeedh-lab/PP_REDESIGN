@@ -18,6 +18,15 @@
   --color-body-mobile: #4b5564;
 }
 
+/* Reveal animations slide some content in from the side. Without this, the
+   page is briefly wider than the screen while they play, and iOS Safari lets
+   it pan sideways, leaving a white strip on the right. `clip` (not `hidden`)
+   keeps the sticky navbar working. */
+html,
+body {
+  overflow-x: clip;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
